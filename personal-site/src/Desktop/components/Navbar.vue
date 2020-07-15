@@ -9,20 +9,20 @@
         <router-link v-else class="nav-link" :to="{name: 'Home'}">Home</router-link>
       </li>
       <li class="nav-item">
-        <router-link v-if="this.$route.name === 'Blog'" class="nav-link active" :to="{name: 'Home'}">Blog</router-link>
-        <router-link v-else class="nav-link" :to="{name: 'Home'}">Blog</router-link>
+        <router-link v-if="this.$route.name === 'Blog'" class="nav-link active" :to="{name: 'Blog'}">Blog</router-link>
+        <router-link v-else class="nav-link" :to="{name: 'Blog'}">Blog</router-link>
       </li>
       <li class="nav-item">
-        <router-link v-if="this.$route.name === 'Project'" class="nav-link" :to="{name: 'Home'}">Projects</router-link>
-        <router-link v-else class="nav-link" :to="{name: 'Home'}">Projects</router-link>
+        <router-link v-if="this.$route.name === 'Project'" class="nav-link active" :to="{name: 'Project'}">Projects</router-link>
+        <router-link v-else class="nav-link" :to="{name: 'Project'}">Projects</router-link>
       </li>
       <li class="nav-item">
-        <router-link v-if="this.$route.name === 'Contact'" class="nav-link" :to="{name: 'Home'}">Contact</router-link>
-        <router-link v-else class="nav-link" :to="{name: 'Home'}">Contact</router-link>
+        <router-link v-if="this.$route.name === 'Contact'" class="nav-link active" :to="{name: 'Contact'}">Contact</router-link>
+        <router-link v-else class="nav-link" :to="{name: 'Contact'}">Contact</router-link>
       </li>
       <li class="nav-item">
-        <router-link v-if="this.$route.name === 'Profile'" class="nav-link" :to="{name: 'Home'}">Profile</router-link>
-        <router-link v-else class="nav-link" :to="{name: 'Home'}">Profile</router-link>
+        <router-link v-if="this.$route.name === 'Profile'" class="nav-link active" :to="{name: 'Profile'}">Profile</router-link>
+        <router-link v-else class="nav-link" :to="{name: 'Profile'}">Profile</router-link>
       </li>
     </ul>
     <router-link tag="button" class="btn btn-outline-light ml-md-auto" :to="{name: 'Login'}"> Log In</router-link>
