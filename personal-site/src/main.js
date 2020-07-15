@@ -5,6 +5,7 @@ import Blog from './Desktop/Blog.vue'
 import Contact from './Desktop/Contact.vue'
 import Profile from "./Desktop/Profile.vue"
 import Projects from "./Desktop/Projects.vue";
+import Error from "./Desktop/Error.vue";
 import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 
@@ -54,7 +55,16 @@ const routes = [
     meta: {
       title: 'Your Profile'
     }
+  },
+  {
+    path: '*',
+    name: 'Error',
+    component: Error,
+    meta: {
+      title: 'Oops - Error'
+    }
   }
+
 ];
 
 const router = new VueRouter({
