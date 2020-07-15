@@ -20,28 +20,40 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Home Page - Ryan Beaumont'
+      title: 'Home - Ryan Beaumont'
     }
   },
   {
     path: '/blog',
     name: 'Blog',
-    component: Blog
+    component: Blog,
+    meta: {
+      title: 'Blog - Ryan Beaumont'
+    }
   },
   {
     path: '/projects',
     name: 'Projects',
-    component: Projects
+    component: Projects,
+    meta: {
+      title: 'Projects- Ryan Beaumont'
+    }
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: Contact,
+    meta: {
+      title: 'Contact - Ryan Beaumont'
+    }
   },
   {
     path: '/profile',
     name: 'Profile',
-    component: Profile
+    component: Profile,
+    meta: {
+      title: 'Your Profile'
+    }
   }
 ];
 
