@@ -1,8 +1,5 @@
 <template>
   <nav class="navbar sticky-top navbar-expand navbar-dark bg-primary shadow-lg">
-    <router-link class="navbar-brand" :to="{name: 'Home'}">
-      <h3>Ryan Beaumont</h3>
-    </router-link>
     <ul class="navbar-nav">
       <li class="nav-item">
         <router-link v-if="this.$route.name === 'Home'" class="nav-link active" :to="{name: 'Home'}">Home</router-link>
