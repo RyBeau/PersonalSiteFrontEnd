@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar sticky-top navbar-expand navbar-dark bg-primary border border-dark">
+  <nav class="navbar sticky-top navbar-expand navbar-dark bg-primary shadow-lg">
     <router-link class="navbar-brand" :to="{name: 'Home'}">
       <h3>Ryan Beaumont</h3>
     </router-link>
