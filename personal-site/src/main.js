@@ -18,7 +18,10 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Home Page - Ryan Beaumont'
+    }
   },
   {
     path: '/blog',
@@ -45,6 +48,12 @@ const routes = [
 const router = new VueRouter({
   routes: routes,
   mode: 'history'
+});
+
+router.afterEach((to, from) => {
+  Vue.nextTick(() => {
+    document.title = to.meta.title;
+  });
 });
 
 new Vue({
