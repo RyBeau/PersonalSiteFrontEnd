@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar sticky-top navbar-expand navbar-dark bg-primary">
+  <nav class="navbar sticky-top navbar-expand navbar-dark bg-primary border border-dark">
     <router-link class="navbar-brand" :to="{name: 'Home'}">
       <h3>Ryan Beaumont</h3>
     </router-link>
@@ -13,8 +13,8 @@
         <router-link v-else class="nav-link" :to="{name: 'Blog'}">Blog</router-link>
       </li>
       <li class="nav-item">
-        <router-link v-if="this.$route.name === 'Project'" class="nav-link active" :to="{name: 'Project'}">Projects</router-link>
-        <router-link v-else class="nav-link" :to="{name: 'Project'}">Projects</router-link>
+        <router-link v-if="this.$route.name === 'Project'" class="nav-link active" :to="{name: 'Projects'}">Projects</router-link>
+        <router-link v-else class="nav-link" :to="{name: 'Projects'}">Projects</router-link>
       </li>
       <li class="nav-item">
         <router-link v-if="this.$route.name === 'Contact'" class="nav-link active" :to="{name: 'Contact'}">Contact</router-link>
