@@ -2,7 +2,7 @@
   <div class="">
     <Navbar></Navbar>
     <div class="container-full-bg">
-      <div class="jumbotron mb-0 vh-100">
+      <div class="jumbotron mb-0 vh-100 bg-light">
         <h1 class="display-4">Welcome to my Site</h1>
         <p class="lead">I'm Ryan Beaumont, an Undergraduate Computer Science Student at the University of Canterbury</p>
         <hr class="my-4">
