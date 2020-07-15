@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Home from './Desktop/Home.vue'
+import Blog from './Desktop/Blog.vue'
+import Contact from './Desktop/Contact.vue'
+import Profile from "./Desktop/Profile.vue"
+import Projects from "./Desktop/Projects.vue";
 import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 
@@ -15,6 +19,26 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog
+  },
+  {
+    path: '/projects',
+    name: 'Project',
+    component: Projects
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
   }
 ];
 
