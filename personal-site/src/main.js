@@ -2,8 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import Home from './Desktop/Home.vue'
 import VueRouter from 'vue-router';
+import Vuex from 'vuex';
 
-Vue.use(VueRouter);
+Vue.use(VueRouter, Vuex);
+
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+Vue.use(VueAxios, axios);
 
 const routes = [
   {
