@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar></Navbar>
     <div class="jumbotron mb-0 vh-100 bg-light text-center">
       <h1> Oops, an error has occurred</h1>
       <p>You'll be redirected to the homepage shortly</p>
@@ -11,10 +10,8 @@
 </template>
 
 <script>
-    import Navbar from "./components/Navbar";
     export default {
       name: "Error",
-      components: {Navbar},
       methods:{
         redirect: function () {
           setTimeout(() => {
