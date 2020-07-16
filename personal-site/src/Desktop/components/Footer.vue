@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-primary border border-dark sticky">
-    <p class="mx-auto">Ryan Beaumont</p>
+  <div class="bg-primary text-light footer">
+    <span> Copyright &copy; 2020 Ryan Beaumont</span>
   </div>
 </template>
 

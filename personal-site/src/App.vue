@@ -4,14 +4,16 @@
     <transition name="fade" mode="out-in" @before-leave="beforeLeave" @enter="enter" @after-enter="afterEnter">
       <router-view></router-view>
     </transition>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Navbar from "./Desktop/components/Navbar";
+import Footer from "./Desktop/components/Footer";
 export default {
   name: 'app',
-  components: {Navbar},
+  components: {Footer, Navbar},
   data() {
     return {
 

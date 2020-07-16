@@ -7,3 +7,11 @@
 .fade-enter, .fade-leave-active{
   opacity: 0;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+}
