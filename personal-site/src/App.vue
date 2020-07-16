@@ -14,22 +14,7 @@ export default {
   components: {Navbar},
   data() {
     return {
-      previousHeight: 0
-    }
-  },
-  methods: {
-    beforeLeave: function (element) {
-      this.previousHeight = getComputedStyle(element.height);
-    },
-    enter: function (element) {
-      const {height} = getComputedStyle(element);
-      element.style.height = this.previousHeight;
-      setTimeout(() => {
-        element.style.height = height;
-      });
-    },
-    afterEnter: function (element) {
-      element.style.height = 'auto';
+
     }
   }
 }
