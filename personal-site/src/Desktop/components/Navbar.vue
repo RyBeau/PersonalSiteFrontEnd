@@ -22,12 +22,14 @@
         <router-link v-else class="nav-link" :to="{name: 'Profile'}">Profile</router-link>
       </li>
     </ul>
-    <router-link tag="button" class="btn btn-outline-light ml-md-auto" :to="{name: 'Login'}"> Log In</router-link>
+    <button tag="button" class="btn btn-outline-light ml-md-auto" data-toggle="modal" data-target="#loginModal">Log In</button>
   </nav>
 </template>
 
 <script>
+    import Login from "./login";
     export default {
-        name: "Navbar"
+        name: "Navbar",
+      components: {Login}
     }
 </script>

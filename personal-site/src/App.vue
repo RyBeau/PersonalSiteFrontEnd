@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <navbar></navbar>
+    <navbar/>
+    <login/>
     <transition name="fade" mode="out-in" @before-leave="beforeLeave" @enter="enter" @after-enter="afterEnter">
-      <router-view></router-view>
+      <router-view/>
     </transition>
-    <Footer></Footer>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Navbar from "./Desktop/components/Navbar";
 import Footer from "./Desktop/components/Footer";
+import Login from "./Desktop/components/login";
 export default {
   name: 'app',
-  components: {Footer, Navbar},
+  components: {Login, Footer, Navbar},
   data() {
     return {
 
