@@ -12,8 +12,12 @@
     </div>
     <div class="col-lg overflow-auto shadow border p-5">
       <h1 id="projectViewTitle"></h1>
-      <h6 id="projectViewAuthor"></h6>
-      <h6><a id="projectViewRepo" href="">Repository</a></h6>
+      <hr class="my-1">
+        <ul class="list-inline my-0">
+          <li class="list-inline-item px-1"><h6 id="projectViewAuthor"></h6></li>
+          <li class="list-inline-item px-1"><h6><a id="projectViewRepo" href="">Repository</a></h6></li>
+        </ul>
+      <hr class="my-1">
       <p id="projectViewDesc"></p>
     </div>
   </div>
@@ -76,7 +80,7 @@
       methods: {
           updateDisplayed: function (position) {
             document.getElementById("projectViewTitle").innerText = this.projects[position].title;
-            document.getElementById("projectViewAuthor").innerText = this.projects[position].username;
+            document.getElementById("projectViewAuthor").innerText = "Author: " + this.projects[position].username;
             document.getElementById("projectViewRepo").setAttribute("href", "https://" +
               this.projects[position].repository);
             document.getElementById("projectViewDesc").innerText = this.projects[position].description;
