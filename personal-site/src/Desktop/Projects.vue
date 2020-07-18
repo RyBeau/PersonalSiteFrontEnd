@@ -28,6 +28,7 @@
         name: "Projects",
       data() {
         return {
+          //Temporary test data
           projects: [
             {
               title: "Test Project 1",
@@ -78,6 +79,7 @@
           this.updateDisplayed(0);
       },
       methods: {
+          //Updated view window to the most recently selected project
           updateDisplayed: function (position) {
             document.getElementById("projectViewTitle").innerText = this.projects[position].title;
             document.getElementById("projectViewAuthor").innerText = "Author: " + this.projects[position].username;

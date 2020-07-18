@@ -21,6 +21,7 @@
         name: "Blog",
       data() {
         return {
+          //Temp data for testing
           blogPosts: [
             {
               title: "My First blog post",
