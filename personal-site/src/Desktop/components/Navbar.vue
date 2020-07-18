@@ -10,7 +10,7 @@
         <router-link v-else class="nav-link" :to="{name: 'Blog'}">Blog</router-link>
       </li>
       <li class="nav-item">
-        <router-link v-if="this.$route.name === 'Project'" class="nav-link active" :to="{name: 'Projects'}">Projects</router-link>
+        <router-link v-if="this.$route.name === 'Projects'" class="nav-link active" :to="{name: 'Projects'}">Projects</router-link>
         <router-link v-else class="nav-link" :to="{name: 'Projects'}">Projects</router-link>
       </li>
       <li class="nav-item">
