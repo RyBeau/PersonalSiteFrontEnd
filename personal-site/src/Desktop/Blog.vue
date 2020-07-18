@@ -2,10 +2,11 @@
   <div class="container p-5">
     <div v-for="post in blogPosts" class="card mb-3 mx-auto blog-card">
       <div class="card-body position-absolute">
-        <h4 class="card-title">{{post.title}}
+        <h4 class="card-title mb-1">{{post.title}}
           <span v-if="givePill(post.date)" class="badge badge-pill badge-primary">New!</span>
         </h4>
         <h6 class="card-subtitle text-muted">{{post.subtitle}}</h6>
+        <hr class="my-2">
         <h6>Date Posted: {{post.date}}</h6>
         <h6>Author: {{post.username}}</h6>
       </div>
