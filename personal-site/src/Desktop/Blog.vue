@@ -1,6 +1,6 @@
 <template>
   <div class="container p-5">
-    <div v-for="post in blogPosts" class="card mb-3 mx-auto grow shadow-transition">
+    <div v-for="post in blogPosts" class="card mb-3 mx-auto blog-card shadow-transition">
       <div class="card-body position-absolute">
         <h4 class="card-title">{{post.title}}
           <span v-if="givePill(post.date)" class="badge badge-pill badge-primary">New!</span>
