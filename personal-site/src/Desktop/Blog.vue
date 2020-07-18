@@ -1,6 +1,6 @@
 <template>
   <div class="container p-5">
-    <div v-for="post in blogPosts" class="card mb-3 mx-auto blog-card shadow-transition">
+    <div v-for="post in blogPosts" class="card mb-3 mx-auto blog-card">
       <div class="card-body position-absolute">
         <h4 class="card-title">{{post.title}}
           <span v-if="givePill(post.date)" class="badge badge-pill badge-primary">New!</span>
@@ -8,8 +8,8 @@
         <h6 class="card-subtitle text-muted">{{post.subtitle}}</h6>
         <h6>Date Posted: {{post.date}}</h6>
         <h6>Author: {{post.username}}</h6>
-        <a href="#" class="stretched-link"></a>
       </div>
+      <a href="#" class="stretched-link"></a>
     </div>
   </div>
 </template>
