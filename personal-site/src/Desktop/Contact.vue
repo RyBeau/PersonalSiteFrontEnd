@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card w-25 text-center shadow-lg mx-auto border-dark" style="margin-top: 30px; min-width: 400px;">
+    <div class="card w-25 text-center shadow-lg mx-auto" style="margin-top: 30px; min-width: 400px;">
       <div class="card-header">
         <h4 class="card-title">Contact Me</h4>
       </div>
