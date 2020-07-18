@@ -3,7 +3,7 @@
     <div v-for="post in blogPosts" class="card mb-3 mx-auto grow shadow-transition">
       <div class="card-body position-absolute">
         <h4 class="card-title">{{post.title}}
-          <span v-if="post.new === true" class="badge badge-pill badge-primary">New!</span>
+          <span v-if="givePill(post.date)" class="badge badge-pill badge-primary">New!</span>
         </h4>
         <h6 class="card-subtitle text-muted">{{post.subtitle}}</h6>
         <h6>Date Posted: {{post.date}}</h6>
@@ -41,16 +41,12 @@
           ]
         }
       },
-      mounted() {
-          this.givePill()
-      },
       methods: {
           //Decides if a blog post is new enough to receive a pill
-          givePill: function () {
-            for (let i = 0; i < this.blogPosts.length; i++){
-              this.blogPosts[i].new = moment().diff(moment(this.blogPosts[i].date, "DD/MM/YYYY"), 'days') <= 7
-            }
-            this.$forceUpdate();
+          givePill: function (date) {
+            const currentDate = moment();
+            const postDate = moment(date, "DD/MM/YYYY");
+            return currentDate.diff(postDate, 'days') <= 7;
           }
       }
     }
