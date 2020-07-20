@@ -17,7 +17,7 @@
         <router-link v-if="this.$route.name === 'Contact'" class="nav-link active" :to="{name: 'Contact'}">Contact</router-link>
         <router-link v-else class="nav-link" :to="{name: 'Contact'}">Contact</router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" v-if="loggedIn">
         <router-link v-if="this.$route.name === 'Profile'" class="nav-link active" :to="{name: 'Profile'}">Profile</router-link>
         <router-link v-else class="nav-link" :to="{name: 'Profile'}">Profile</router-link>
       </li>
