@@ -15,7 +15,7 @@
       <hr class="my-1">
         <ul class="list-inline my-0">
           <li class="list-inline-item px-1"><h6 id="projectViewAuthor"></h6></li>
-          <li class="list-inline-item px-1"><h6><a id="projectViewRepo" href="">Repository</a></h6></li>
+          <li class="list-inline-item px-1"><h6><a id="projectViewRepo" href="" target="_blank">Repository</a></h6></li>
         </ul>
       <hr class="my-1">
       <p id="projectViewDesc"></p>
