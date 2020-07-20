@@ -9,7 +9,7 @@
           where I discuss my projects and other interests.</p>
         <router-link tag="button" class="btn btn-primary" :to="{name: 'Projects'}">Projects</router-link>
         <router-link tag="button" class="btn btn-primary" :to="{name: 'Blog'}">Blog</router-link>
-        <a class="btn btn-primary" href="https://github.com/rybeau">GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/rybeau" target="_blank">GitHub</a>
       </div>
     </div>
   </div>
