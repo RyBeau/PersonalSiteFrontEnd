@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/PersonalSiteFrontEnd/',
+    publicPath: '/PersonalSiteFrontEnd/dist/',
     filename: 'build.js'
   },
   module: {
