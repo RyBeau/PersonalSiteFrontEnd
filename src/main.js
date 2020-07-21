@@ -40,7 +40,7 @@ const routes = [
     name: 'Projects',
     component: Projects,
     meta: {
-      title: 'Projects- Ryan Beaumont'
+      title: 'Projects - Ryan Beaumont'
     }
   },
   {
@@ -60,7 +60,7 @@ const routes = [
     }
   },
   {
-    path: ghPath + '*',
+    path: '*',
     name: 'Error',
     component: Error,
     meta: {

@@ -15,7 +15,7 @@
       methods:{
         redirect: function () {
           setTimeout(() => {
-            this.$router.push("/");
+            this.$router.push({name: 'Home'});
           }, 3500);
         }
       },
