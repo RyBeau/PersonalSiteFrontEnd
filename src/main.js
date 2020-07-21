@@ -84,5 +84,12 @@ router.afterEach((to, from) => {
 new Vue({
   el: '#app',
   router: router,
-  render: h => h(App)
+  render: h => h(App),
+  created() {
+    if (localStorage.path){
+      const path = localStorage.path;
+      localStorage.removeItem("path");
+      this.$router.push(path);
+    }
+  }
 });
