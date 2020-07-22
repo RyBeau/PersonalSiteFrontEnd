@@ -15,12 +15,9 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 Vue.use(VueAxios, axios);
 
-const ghPath = '/PersonalSiteFrontEnd';
-
-
 const routes = [
   {
-    path: ghPath + '/',
+    path: '/',
     name: 'Home',
     component: Home,
     meta: {
@@ -28,7 +25,7 @@ const routes = [
     }
   },
   {
-    path: ghPath + '/blog',
+    path: '/blog',
     name: 'Blog',
     component: Blog,
     meta: {
@@ -36,7 +33,7 @@ const routes = [
     }
   },
   {
-    path: ghPath + '/projects',
+    path: '/projects',
     name: 'Projects',
     component: Projects,
     meta: {
@@ -52,7 +49,7 @@ const routes = [
     }
   },
   {
-    path: ghPath +'/profile',
+    path: '/profile',
     name: 'Profile',
     component: Profile,
     meta: {
