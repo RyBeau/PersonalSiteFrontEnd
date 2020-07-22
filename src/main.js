@@ -41,7 +41,7 @@ const routes = [
     }
   },
   {
-    path: ghPath + '/contact',
+    path: '/contact',
     name: 'Contact',
     component: Contact,
     meta: {
