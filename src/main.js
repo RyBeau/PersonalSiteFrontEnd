@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import vuetify from "./plugins/vuetify";
 import App from './App.vue'
 import Home from './Desktop/Home.vue'
 import Blog from './Desktop/Blog.vue'
@@ -79,6 +80,7 @@ router.afterEach((to, from) => {
 });
 
 new Vue({
+  vuetify,
   el: '#app',
   router: router,
   render: h => h(App)
