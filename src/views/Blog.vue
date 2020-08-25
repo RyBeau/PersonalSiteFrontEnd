@@ -1,6 +1,6 @@
 <template>
   <div class="container p-5">
-    <div v-for="post in blogPosts" class="card mb-3 mx-auto blog-card">
+    <div v-for="post in blogPosts" v-bind:key="post.id" class="card mb-3 mx-auto blog-card">
       <div class="card-body position-absolute">
         <h4 class="card-title mb-1">{{post.title}}
           <span v-if="givePill(post.date)" class="badge badge-pill badge-primary">New!</span>
@@ -24,17 +24,20 @@
           //Temp data for testing
           blogPosts: [
             {
+              id: 1,
               title: "My First blog post",
               subtitle: "For testing purposes",
               date: "19/07/2020",
               username: "RyBeau"
             },
             {
+              id: 2,
               title: "My Second blog post",
               date: "16/06/2020",
               username: "RyBeau"
             },
             {
+              id: 3,
               title: "My Third blog post",
               subtitle: "For testing purposes",
               date: "15/06/2020",

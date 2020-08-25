@@ -7,9 +7,9 @@
         <hr class="my-4">
         <p>Here you'll find the projects I have worked on at University and as recreation. You'll also find my Blog
           where I discuss my projects and other interests.</p>
-        <router-link tag="button" class="btn btn-primary" :to="{name: 'Projects'}">Projects</router-link>
-        <router-link tag="button" class="btn btn-primary" :to="{name: 'Blog'}">Blog</router-link>
-        <a class="btn btn-primary" href="https://github.com/rybeau" target="_blank">GitHub</a>
+        <router-link tag="button" class="btn btn-primary mr-1" :to="{name: 'Projects'}">Projects</router-link>
+        <router-link tag="button" class="btn btn-primary mr-1" :to="{name: 'Blog'}">Blog</router-link>
+        <a class="btn btn-primary mr-1" rel="noopener noreferrer" href="https://github.com/rybeau" target="_blank">GitHub</a>
       </div>
     </div>
   </div>
@@ -18,8 +18,10 @@
 <script>
   export default {
     name: "Home",
-    data: {
-      show: false
+    data() {
+      return {
+        show: false
+      }
     }
   }
 </script>

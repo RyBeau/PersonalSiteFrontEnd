@@ -1,7 +1,7 @@
 <template>
   <div class="row mx-auto container p-5">
     <div class="col- p-4 shadow overflow-auto border" style="height: 82vh">
-          <div v-for="(project, position) in projects" class="card mb-3 mx-auto project-card">
+          <div v-for="(project, position) in projects" v-bind:key="project.repository" class="card mb-3 mx-auto project-card">
             <div class="card-body position-absolute">
               <h4 class="card-title">{{project.title}}</h4>
               <h6 class="card-subtitle text-muted">{{project.subtitle}}</h6>

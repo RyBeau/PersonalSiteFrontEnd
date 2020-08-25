@@ -31,7 +31,6 @@
     import Login from "./login";
     export default {
       name: "Navbar",
-      components: {Login},
       data() {
         return {
           loggedIn: false

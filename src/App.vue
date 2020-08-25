@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import Navbar from "./Desktop/components/Navbar";
-import Footer from "./Desktop/components/Footer";
-import Login from "./Desktop/components/login";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Login from "./components/login";
 export default {
   name: 'app',
   components: {Login, Footer, Navbar},
