@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Blog from '../views/Blog.vue'
@@ -8,6 +10,7 @@ import Profile from '../views/Profile.vue'
 import Error from '../views/Error.vue'
 
 Vue.use(VueRouter)
+Vue.use(VueAxios, axios)
 
 const routes = [
   {
